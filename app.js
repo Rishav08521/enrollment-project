@@ -62,6 +62,6 @@ app.post('/submit', async (req, res) => {
 
 // Start the server
 const port = 3000;
-app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server running on http://localhost:${process.env.PORT}`);
 });
